@@ -64,6 +64,11 @@ namespace GuessTheNumber
         /// </summary>
         public void DiscoverNumber()
         {
+            // Clear variables to their initial values before a discover
+            this.CurrentNumberOfGuesses = 0;
+            this.CurrentGuessMinimum = 0;
+            this.CurrentGuessMinimum = this.MaximumNumber / 2;
+
             //While the guess isn't the same
             while (this.CurrentGuessMinimum != this.CurrentGuessMaximum)
             {
